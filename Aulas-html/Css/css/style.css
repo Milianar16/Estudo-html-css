@@ -12,8 +12,8 @@ p{
 
 body{
     background-color:black; /*O fundo do meu html vai ficar com a cor preta*/
-    font-family:'Montserrat', sans-serif; /* o corpo da minha pág vai usar fonte arial,
-    se não tiver disponivel ele utiliza alguma fonte que se encaixe num termo sans-serif*/ 
+    font-family:'Montserrat', sans-serif; /* o corpo da minha pág vai usar fonte que eu escolher,
+    se não tiver disponivel ele utiliza alguma fonte que se encaixe no termo sans-serif*/ 
 }
 /*TIPOS DE SELETOR BÁSICO
 1)Por elemento
@@ -27,7 +27,7 @@ h1,h2,h3 { /* se aplica em qualquer h1 da tag*/
 }
 /* Uso um id quando quero estilizar um elemento especifico*/
 
-#meu-h1 { /*quando tiver um elemento igual meu-h1*/
+#meu-h1 { /*quando tiver um elemento igual meu-h1 nesse exemplo, para cada elemento especifico tenho que criar um id diferente*/
     font-weight:100;
 }
 
