@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário SoulCode</title>
+    <style>
+*{
+    
+    box-sizing: border-box;
+
+}
+    
+        body{
+            background-image: url('https://soulcodeacademy.org/martech-academy/assets/images/Picture1.png');
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: darkcyan; 
+            background-repeat:repeat;
+            min-height: 100vh;
+            width: 100vw;
+            flex-direction:column;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          
+        }
+        .box{
+            color:white;
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform: translater(-50%, -50%);
+            background-color: rgba(0, 0, 0,0.6);
+            padding: 15px;
+            border-radius:15px;
+            width:20% ;
+        }
+
+        form .input-field:first-child{
+             margin-bottom: 1.5rem;
+        }
+        
+        .input-fiel .underline::before{
+            content:'';
+            position:absolute;
+            height: 1px;
+            width: 100%;
+            bottom:-5px;
+            left:0;
+            background: rgb(0,139 ,139 );
+        }
+        
+        .input-field.underline::after{
+            content:'';
+            position:absolute;
+            height: 1px;
+            width: 100%;
+            bottom:-5px;
+            left:0;
+            background: rgb(0,139 ,139 );
+            transform: scale(0);
+            transition: all .3s ease-in-out;
+            transform-origin: left;
+        }
+
+        
+        
+        fieldset{
+            border: 3px solid darkturquoise;
+        }
+        legend{
+            border:1px solid yellow;
+            padding: 10px;
+            text-align:center;
+            background-color: darkcyan;
+            border-radius: 8px;
+           
+        }
+        .inputBox{
+            position:relative;    
+        }
+        .inputUser{
+            background:none;
+            border:none;
+            border-bottom:1px solid white;
+            outline: none;
+            color:white;
+            font: size 15px;
+            width: 100%;
+            letter-spacing: 2px;
+        }
+        .labelInput{
+            position: absolute;
+            top:0px;
+            left:0px;
+            pointer-events: none;
+            transition: .5s;
+        }
+        .inputUser:focus ~ .labelInput,
+        .inputUser:valid ~ .labelInput{
+            top: -20px;
+            font: size 12px;
+            color:dodgerblue
+        }
+        #submit{
+            background-image: linear-gradient(to rigth rgb(0,139,139));
+            width: 100%;
+            border:none;
+            padding: 15px;
+            color:darkcyan;
+            font-size: 15px;
+            cursor:pointer;
+            border-radius:15px ;
+
+        }
+        #submit{
+            background-image: linear-gradient(to rigth rgb(0,139 ,139 ));
+            width: 100%;
+            border: none;
+            padding: 15px;
+            color:darkgoldenrod;
+            font-size:15px;
+            cursor:pointer;
+            border-radius: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+        <form action="">
+           <fieldset>
+            <legend><b>SoulCode Academy</b></legend>
+            <br></br>
+            <div class="inputBox">
+                <input type="text" name="nome" id="nome" class="inputUser" required>
+                <label for="nome" class="labelInput"> Email</label>
+            </div>
+            <br>
+            <div class="inputBox">
+                <input type="email" name="email" id="email" class="inputUser" required>
+                <label for="nome"class="labelInput" class="inputUser" required
+                >Senha</label>
+               
+
+            </div>
+            <br>
+            <input type="submit" name="submit" id="submit">
+           </fieldset> 
+        </form>
+    </div>
+</body>
+</html>

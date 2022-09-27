@@ -1,0 +1,97 @@
+
+*{ /*aplicado em todos os elementos*/
+    /**Garante que os elementos respeitem as dimensões quando possuem padding e border*/
+
+    box-sizing:  border-box;
+}
+
+.image{
+    width:100%;
+    border-radius:2px;
+    opacity:0.5;
+    position:absolute;  
+    background-size:contain;
+    padding:16px;
+    margin: 8px;
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-size: auto;
+}
+.header{ 
+        padding:20px;
+        text-align:center;
+        background: #121212;
+        color: white;
+      }
+
+.box1{
+    background-color: bisque;
+    padding: 0px;
+    margin: 0px;
+    text-align:center;
+    border-bottom: 5%;
+    object-position: 5%;
+}
+
+
+.box2{
+    background-color:burlywood;
+    padding: 30px;
+    margin: 10px;
+    text-align:center;
+    border-radius: 5%;
+    object-position: 5%;
+    border-radius:10px;
+}
+.box3{
+    background-color:bisque;
+    padding: 12px;
+    margin: 12px;
+    text-align:center;
+    border-radius:10px;
+}
+.box4{
+    padding: 12px;
+    margin: 12px;
+    text-align: center;
+    background-color:burlywood;
+    text-align:center;
+    background-image: center;
+    border-radius:10px;
+}
+
+.box5{
+    padding: 0px;
+    margin: 10px;
+    text-align: center;
+    background-color:burlywood;
+    border-radius:10px;
+}
+.box6{
+    text-align:center;
+    background-color:burlywood;
+
+}
+*{
+    box-sizing: border-box; 
+}
+body{
+    background-color:burlywood;
+    margin:auto;
+        padding:0;
+        margin:0;
+        opacity: 0.8;
+        width: 100%;
+    background-image: url("https://f5c4m5a4.stackpathcdn.com/wp-content/uploads/2021/03/por-do-sol-na-praia-de-ponta-negra-em-natal.png");
+    
+        /*y=vertical*/ /*x=horizontal*/
+        background-repeat:no-repeat;
+        /*cover=zoom*/
+        /*contain= estica a imagem*/
+        background-size:cover;
+       /*background-position:center*/
+       /*background-position: right bottom;*/
+       background-attachment: fixed;
+       /*height: 100vh; viewport heigth=vh*/
+}
+

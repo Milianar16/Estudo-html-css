@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.container-flex{
+    background-color: silver;
+    display:flex; /*Ativando o flexbox*/
+    flex-direction:row; /*Distribuição  colum -vertical/ row-distribuição hor*/
+    flex-wrap:wrap; /* wrap-respeita as dimensões e qdo não tem espaço para ocupar os elementos quebra a linha*/
+    /*cuida dos elemetos no eixo main/principal*/
+    /*center, space-around, space-between(cola na parede), space-evenly*/ 
+    /*JUSTIFY-CONTENT: alinhamento do eixo principal (hori = row, vert = column)
+space-between - espaço apenas entre cada elemento
+space-around - espaço entre elementos e limites
+space-evenly - espaço entre elementos e limites igual
+center - centraliza o grupo de elementos*/
+    justify-content:center;
+    align-items: center;
+    /* cuida dos elementos cross/cruzado*/
+    /*strech, center, flex-start, flex-end*/
+
+    /*Cuida do espaço extra container*/
+    align-content: center;
+    height: 350px;
+    gap: 16px;
+}
+.box-1{
+    background-color: darkcyan;
+    align-self: flex-end;
+    order:1;
+}
+
+.box-2{
+    background-color: blue;
+    height: 200px;
+}
+
+.box-3{
+    background-color: crimson;
+    align-self: flex-start;
+}
+
+.box-4{
+    background-color: burlywood;
+}
+/** .conteriner-flex div*/
+.box-1, .box-2, .box-3, .box-4{
+    width: 250px;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.box-5{
+    background-color: aqua;
+    flex:1;
+}
+
+.box-6{
+    background-color: cadetblue;
+    flex:2;
+}
+
+.box-7{
+    background-color: cornflowerblue;
+    width: 400px;
+}
+
+.container-flex-2{
+    display: flex;
+    background-color: chocolate;
+    height:200px;
+    flex-wrap: wrap;
+}
+

@@ -1,0 +1,158 @@
+<!-- Exercício
+// 1) Montar um formulário conforme o que está sendo mostrado na imagem.
+// 2) Ao final da página adicione uma tabela informando as formações oferecidas pela soulcode com custo, prazo, início, duração, horário de aula, Formato de aula, Idioma.
+Para o logo usem :https://soulcodeacademy.org/assets/images/logo/light-logo.png
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Css/styleexercicio03.css"/>
+</head>
+<body>
+
+    <forms>
+    <head>
+      
+         
+      <div class="box1"><h1>Bem-vindo! Entre com seu email e senha.</h1></div>
+   
+      <img src='https://soulcodeacademy.org/assets/images/logo/light-logo.png' />
+      
+   </div>
+      <main>
+    
+
+        <label for="campoEmail">Email</label><br>
+        <input id="campoEmail" name="campoEmail" type="email"
+        placeholder="usuario@exemplo.com" required/>
+
+       </div>
+    <div>
+        <!-- type="password" oculta a senha onde será digitado-->
+
+    <label for="campoSenha">Senha</label><br>
+    <input id="campoSenha" name="campoSenha" type="password"
+    placeholder="Sua senha"  minlength="8" required/>
+    </div>
+    
+    <hr />
+    <button type="submit">Login</button>
+
+    <div>
+        <input id="checkTermos" type="checkbox" name="corcordaTermos"
+        required />
+        <label for="checkTermos">Continuar conectado?</label>
+
+      </div>
+      
+   <section>
+
+   <table border="1" cellpadding="3" style="border-collapse: collapse;"></thead>
+
+
+    <tr>
+      <div class="box2">
+        <th colspan="2">DESENVOLVEDOR JAVA FULL STACK</th>
+    </tr>
+    <tr>
+        <td><strong>Custo</strong></td>
+        <td><strong>Bolsa Integral</strong></td>
+    
+     </tr>
+     <tr>
+        <td><strong>Prazos de Inscrição</strong></td>
+        <td>16/01/23</td>
+     </tr>
+     <tr>
+
+        <td><strong>Inicio do Curso</strong></td>
+        <td>30/01/23</td>
+     </tr>
+
+     <tr>
+        <td><strong>Duração</strong></td>
+        <td>16 semanas</td>
+     </tr>
+
+     <tr>
+        <td><strong>Horário de Aula</strong></td>
+        <td>8h às 18h</td>
+     </tr>
+     <tr>
+        <td><strong>Formato de Aula</strong></td>
+        <td>Online e ao vivo</td>
+     </tr>
+     <tr>
+        <td><strong>Idioma</strong></td>
+        <td>Português</td>
+     </div>
+     </tr>
+
+    </section>
+     <br>
+
+     <section>
+
+     <table border="1" cellpadding="4" style="border-collapse: collapse;"></thead>
+        
+     <tr>
+        <th colspan="2">DESENVOLVEDOR SALESFORCE</th><br>
+    </tr>
+    
+    <tr>
+        <td><strong>Custo</strong></td>
+        <td><strong>Bolsa Integral</strong></td>
+    
+     </tr>
+     <tr>
+        <td><strong>Prazos de Inscrição</strong></td>
+        <td>03/10/22</td>
+     </tr>
+     <tr>
+
+        <td><strong>Inicio do Curso</strong></td>
+        <td>17/10/22</td>
+     </tr>
+
+     <tr>
+        <td><strong>Duração</strong></td>
+        <td>12 semanas</td>
+     </tr>
+
+     <tr>
+        <td><strong>Horário de Aula</strong></td>
+        <td>8h às 18h</td>
+     </tr>
+     <tr>
+        <td><strong>Formato de Aula</strong></td>
+        <td>Online e ao vivo</td>
+     </tr>
+     <tr>
+        <td><strong>Idioma</strong></td>
+        <td>Português</td>
+     </tr>
+
+    </section>
+
+    </main>
+    <hr />
+    
+    </tbody>
+
+</table>
+
+    </forms>
+    <footer> <!--Dá informações sobre autoria/ encerra o conteúdo-->
+        © 
+        <script>
+            document.write(new Date().getFullYear())
+        </script>
+        Soulcode Academy Exercicio 03-HTML 20/SET
+        </footer>
+</body>
+</html>
