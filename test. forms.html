@@ -1,154 +1,472 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário SoulCode</title>
-    <style>
-*{
-    
-    box-sizing: border-box;
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Formulário SoulcodeAcademy</title>
+   <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=PT+Sans+Narrow:wght@400;700&display=swap"
+      rel="stylesheet">
 
-}
-    
-        body{
-            background-image: url('https://soulcodeacademy.org/martech-academy/assets/images/Picture1.png');
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: darkcyan; 
-            background-repeat:repeat;
-            min-height: 100vh;
-            width: 100vw;
-            flex-direction:column;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-          
-        }
-        .box{
-            color:white;
-            position:absolute;
-            top:50%;
-            left:50%;
-            transform: translater(-50%, -50%);
-            background-color: rgba(0, 0, 0,0.6);
-            padding: 15px;
-            border-radius:15px;
-            width:20% ;
-        }
-
-        form .input-field:first-child{
-             margin-bottom: 1.5rem;
-        }
-        
-        .input-fiel .underline::before{
-            content:'';
-            position:absolute;
-            height: 1px;
-            width: 100%;
-            bottom:-5px;
-            left:0;
-            background: rgb(0,139 ,139 );
-        }
-        
-        .input-field.underline::after{
-            content:'';
-            position:absolute;
-            height: 1px;
-            width: 100%;
-            bottom:-5px;
-            left:0;
-            background: rgb(0,139 ,139 );
-            transform: scale(0);
-            transition: all .3s ease-in-out;
-            transform-origin: left;
-        }
-
-        
-        
-        fieldset{
-            border: 3px solid darkturquoise;
-        }
-        legend{
-            border:1px solid yellow;
-            padding: 10px;
-            text-align:center;
-            background-color: darkcyan;
-            border-radius: 8px;
-           
-        }
-        .inputBox{
-            position:relative;    
-        }
-        .inputUser{
-            background:none;
-            border:none;
-            border-bottom:1px solid white;
-            outline: none;
-            color:white;
-            font: size 15px;
-            width: 100%;
-            letter-spacing: 2px;
-        }
-        .labelInput{
-            position: absolute;
-            top:0px;
-            left:0px;
-            pointer-events: none;
-            transition: .5s;
-        }
-        .inputUser:focus ~ .labelInput,
-        .inputUser:valid ~ .labelInput{
-            top: -20px;
-            font: size 12px;
-            color:dodgerblue
-        }
-        #submit{
-            background-image: linear-gradient(to rigth rgb(0,139,139));
-            width: 100%;
-            border:none;
-            padding: 15px;
-            color:darkcyan;
-            font-size: 15px;
-            cursor:pointer;
-            border-radius:15px ;
-
-        }
-        #submit{
-            background-image: linear-gradient(to rigth rgb(0,139 ,139 ));
-            width: 100%;
-            border: none;
-            padding: 15px;
-            color:darkgoldenrod;
-            font-size:15px;
-            cursor:pointer;
-            border-radius: 10px;
-        }
-        
-    </style>
-</head>
 <body>
-    <div class="box">
-        <form action="">
-           <fieldset>
-            <legend><b>SoulCode Academy</b></legend>
-            <br></br>
-            <div class="inputBox">
-                <input type="text" name="nome" id="nome" class="inputUser" required>
-                <label for="nome" class="labelInput"> Email</label>
+
+   <header>
+      <nav class="navbar">
+         <div class="navbar-brand">
+            <div class="mx-auto order-0">
+               <img src="https://soulcodeacademy.org/assets/images/logo/light-logo.png" alt="Brand" />
             </div>
-            <br>
+      </nav>
+
+   </header>
+   <script>
+      function ativaNavbar() {
+         // js 'varrer' documento html
+         // em busca do elemento com class .navbar-menu
+         //toggle= coloca a classe ativa senão tiver, remove se tiver
+         document.querySelector(".navbar-menu").classList.toggle("ativa")
+      }
+   </script>
+   </head>
+
+   <body>
+
+   </body>
+
+</html>
+<style>
+   * {
+
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      justify-content: center;
+
+
+   }
+
+   .box {
+      display: flex;
+      padding: 0px;
+      background-color: #0f637a;
+     
+      
+      
+
+
+   }
+
+   .box-1{
+      display: flex;
+      background-color:#ffd900;
+      margin:0px; 
+      padding:5%;
+   }
+   
+   .box-4 {
+      display: flex;
+      justify-content:center;
+      width: max-content;
+      margin:0px; 
+      background-color: #ffd900;
+      justify-content:first baseline;
+      margin: 10px;
+      padding: 20px;
+      
+      
+
+   }
+
+   .input-fiel .underline::before {
+      content: '';
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      bottom: -5px;
+      left: 0;
+      background: #0f637aab;
+   }
+
+
+   fieldset {
+      margin: 30px;
+      padding: 20px;
+      background-color: white;
+      border-radius:10px;
+      justify-content: text;
+
+
+   }
+
+   legend {
+      padding: 2px;
+      margin: 30px;
+      text-align: center;
+      background-color: #ffd900;
+      border-radius: 5px;
+
+
+   }
+
+   .inputBox {
+      position:relative;
+      margin-top: 20px;
+      padding:10% ;
+   }
+
+   .inputUser {
+      background: none;
+      border: none;
+      border-bottom: 1px solid blue;
+      outline: none;
+      width: 100%;
+
+   }
+
+   .labelInput {
+      position: absolute;
+      top: -10px;
+      left: 0px;
+      pointer-events: none;
+      transition: .5s;
+
+   }
+
+   :root {
+      --azul: #0f637a;
+      --amarelo: #ffd900;
+   }
+
+   .navbar {
+      background-color: var(--azul);
+      display: flex;
+      min-height: 64px;
+      padding: 12px;
+      justify-content: center;
+      opacity: 0.8;
+
+   }
+
+   .navbar-brand img {
+      height: 50px;
+
+   }
+
+   .navbar-brand {
+      display: flex;
+      align-items: center;
+   }
+</style>
+</head>
+
+<body>
+
+   <div class="box">
+      <form action="">
+         <fieldset>
             <div class="inputBox">
-                <input type="email" name="email" id="email" class="inputUser" required>
-                <label for="nome"class="labelInput" class="inputUser" required
-                >Senha</label>
-               
+
+               <form>
+                  <!--Container de inputs-->
+                  <div>
+                     <label for="campoNome"><b>Inscreva-se</b></label><br><br>
+                     <!--Rótulo do campo (dá um nome)-->
+                     <label for="campoNome">Nome completo</label><br>
+
+                     <input id="campoNome" name="campoNome" type="text" placeholder="Seu Nome" requerid />
+                  </div>
+                  <div>
+
+                     <label for="campoEmail">Email</label><br>
+                     <input id="campoEmail" name="campoEmail" type="email" placeholder="usuario@exemplo.com" required />
+
+                  </div>
+
+                  <div>
+
+                     <label for="campoSenha">Senha</label><br>
+                     <input id="campoSenha" name="campoSenha" type="password" placeholder="Crie uma senha" minlength="8"
+                        required />
+                  </div>
+
+
+                  <br>
+
+                  <input id="checkfull" name=campoCurso type="radio" valeu="ingles" />
+                  <label for="Full Stack">JAVA FULL STACK</label>
+                  <br><br>
+                  <input id="checkEspanhol" name="campoCurso" type="radio" valeu="espanhol" />
+                  <label for="engdedados">ENGENHARIA DE DADOS</label>
+                  <br><br>
+                  <input id="checkDevSForce" name="campoCurso" type="radio" valeu="portugues" />
+                  <label for="checkDevSForce">DESENVOLVEDOR SALESFORCE</label>
+                  <br><br>
+                  <input id="checkDevSNow" name="campoCurso" type="radio" valeu="portugues" />
+                  <label for="checkDevSNow">DESENVOLVEDOR SERVICENOW</label>
+                  <br><br>
 
             </div>
-            <br>
-            <input type="submit" name="submit" id="submit">
-           </fieldset> 
-        </form>
-    </div>
+            <div>
+               <button classe="inscricao" type="submit"><button type="submit">
+                     <a href="https://soulcodeacademy.org/bootcamp" target="_blank ">Quero me inscrever</a></button>
+            </div>
+   </div>
+   </fieldset>
+
+
+   </form>
+
+   <div class="box-1">
+
+      <table border="1" cellpadding="3" style="border-collapse: collapse;">
+         </thead>
+        
+            <tr>
+
+               <div class="box-4">
+
+                  <th colspan="3">
+                     <h4>DESENVOLVEDOR JAVA <br>FULL STACK</h4>
+                  
+               </div>   
+            </tr>
+
+            <tr>
+               <div>
+                  <td class="money"><img src="./Aulas e exercicios/img/payments_FILL0_wght400_GRAD0_opsz48.png"
+                        width="18">
+                  </td>
+               </div>
+               <td><strong>Custo</strong></td>
+               <td><strong>Bolsa Integral</strong></td>
+
+            </tr>
+            <tr>
+               <div>
+                  <td class="date"><img src="./Aulas e exercicios/img/icone2.png" width="18"></td>
+               </div>
+               <td><strong>Prazos de Inscrição</strong></td>
+               <td>16/01/23</td>
+            </tr>
+            <tr>
+               <div>
+                  <td class="inicio"><img src="./Aulas e exercicios/img/icone3.png" width="18"></td>
+               </div>
+               <td><strong>Inicio do Curso</strong></td>
+               <td>30/01/23</td>
+            </tr>
+
+            <tr>
+               <div>
+                  <td class="duração"><img src="./Aulas e exercicios/img/icone4.png" width="18"></td>
+               </div>
+               <td><strong>Duração</strong></td>
+               <td>16 semanas</td>
+            </tr>
+
+            <tr>
+               <div>
+                  <td class="Tempo"><img src="./Aulas e exercicios/img/icone6.png" width="18"></td>
+               </div>
+               <td><strong>Horário de Aula</strong></td>
+               <td>8h às 18h</td>
+            </tr>
+            <tr>
+               <div>
+                  <td class="online"><img src="./Aulas e exercicios/img/icone7.png" width="18"></td>
+               </div>
+               <td><strong>Formato de Aula</strong></td>
+               <td>Online e ao vivo</td>
+            </tr>
+            <tr>
+               <div>
+                  <td class="idioma"><img src="./Aulas e exercicios/img/4459037.png" width="18"></td>
+               </div>
+               <td><strong>Idioma</strong></td>
+               <td>Português</td>
+
+            </tr>
+         </table>
+         
+         <div class="box-4">
+
+            <table border="1" cellpadding="3" style="border-collapse: collapse;">
+               </thead>
+               <tr>
+                  <div class="box-4">
+                     <th colspan="3">
+                        <h4>ENGENHARIA DE <br>
+                           DADOS</h4>
+                     </th>
+               </tr>
+               <tr>
+                  <div>
+                     <td class="money"><img src="./Aulas e exercicios/img/payments_FILL0_wght400_GRAD0_opsz48.png"
+                           width="18">
+                     </td>
+                  </div>
+                  <br><br>
+                  <td><strong>Custo</strong></td>
+                  <td><strong>Bolsa Integral</strong></td>
+
+               </tr>
+               <tr>
+                  <div>
+                     <td class="date"><img src="./Aulas e exercicios/img/icone2.png" width="18"></td>
+                  </div>
+                  <td><strong>Prazos de Inscrição</strong></td>
+                  <td>03/10/22</td>
+               </tr>
+               <tr>
+                  <div>
+                     <td class="inicio"><img src="./Aulas e exercicios/img/icone3.png" width="18"></td>
+                  </div>
+                  <td><strong>Inicio do Curso</strong></td>
+                  <td>17/10/22</td>
+               </tr>
+
+               <tr>
+                  <div>
+                     <td class="duração"><img src="./Aulas e exercicios/img/icone4.png" width="18"></td>
+                  </div>
+                  <td><strong>Duração</strong></td>
+                  <td>12 semanas</td>
+               </tr>
+
+               <tr>
+                  <div>
+                     <td class="Tempo"><img src="./Aulas e exercicios/img/icone6.png" width="18"></td>
+                  </div>
+                  <td><strong>Horário de Aula</strong></td>
+                  <td>8h às 18h</td>
+               </tr>
+               <tr>
+                  <div>
+                     <td class="online"><img src="./Aulas e exercicios/img/icone7.png" width="18"></td>
+                  </div>
+                  <td><strong>Formato de Aula</strong></td>
+                  <td>Online e ao vivo</td>
+               </tr>
+               <tr>
+                  <div>
+                     <td class="idioma"><img src="./Aulas e exercicios/img/4459037.png" width="18"></td>
+                  </div>
+                  <td><strong>Idioma</strong></td>
+                  <td>Português</td>
+               </tr>
+
+         </div>
+         
+         <div class="box-4">
+
+            <table border="1" cellpadding="3" style="border-collapse: collapse;">
+               </thead>
+               <tr>
+                  <div class="box-4">
+                     <th colspan="2">
+                        <h4>DESENVOLVEDOR <br>SALESFORCE</h4>
+                     </th>
+               </tr>
+               <tr>
+                  <td><strong>Custo</strong></td>
+                  <td><strong>Bolsa Integral</strong></td>
+
+               </tr>
+               <tr>
+                  <td><strong>Prazos de Inscrição</strong></td>
+                  <td>03/10/22</td>
+               </tr>
+               <tr>
+
+                  <td><strong>Inicio do Curso</strong></td>
+                  <td>17/10/22</td>
+               </tr>
+
+               <tr>
+                  <td><strong>Duração</strong></td>
+                  <td>12 semanas</td>
+               </tr>
+
+               <tr>
+                  <td><strong>Horário de Aula</strong></td>
+                  <td>8h às 18h</td>
+               </tr>
+               <tr>
+                  <td><strong>Formato de Aula</strong></td>
+                  <td>Online e ao vivo</td>
+               </tr>
+               <tr>
+                  <td><strong>Idioma</strong></td>
+                  <td>Português</td>
+               </tr>
+            </table>
+         </div>
+
+         <div class="box-4">
+
+            <table border="1" cellpadding="3" style="border-collapse: collapse;">
+               </thead>
+               <tr>
+                  <div class="box-4">
+
+                     <th colspan="2">
+                        <h4>DESENVOLVEDOR <br>SERVICENOW</h4>
+                     </th>
+               </tr>
+               <tr>
+                  <td><strong>Custo</strong></td>
+                  <td><strong>Bolsa Integral</strong></td>
+
+               </tr>
+               <tr>
+                  <td><strong>Prazos de Inscrição</strong></td>
+                  <td>17/10/22</td>
+               </tr>
+               <tr>
+
+                  <td><strong>Inicio do Curso</strong></td>
+                  <td>31/10/22</td>
+               </tr>
+
+               <tr>
+                  <td><strong>Duração</strong></td>
+                  <td>12 semanas</td>
+               </tr>
+
+               <tr>
+                  <td><strong>Horário de Aula</strong></td>
+                  <td>8h às 18h</td>
+               </tr>
+               <tr>
+                  <td><strong>Formato de Aula</strong></td>
+                  <td>Online e ao vivo</td>
+               </tr>
+               <tr>
+                  <td><strong>Idioma</strong></td>
+                  <td>Português</td>
+               </tr>
+            </table>
+         </div>
+      </table>
+   </div>
+
+   </section>
+
+   </thead>
+
+
+
+
+   </main>
+
+   </tbody>
+
 </body>
+
 </html>

@@ -18,10 +18,12 @@ body {
     min-height: 64px;
     padding: 12px;
     justify-content: space-between;
+    
 }
 
 .navbar-brand img {
     height: 36px;
+   
 }
 
 .navbar-brand {
